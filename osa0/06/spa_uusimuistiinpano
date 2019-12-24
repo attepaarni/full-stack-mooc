@@ -1,0 +1,16 @@
+note over selain:
+selain suorittaa tapahtumankäsittelijän,
+joka estää lomakkeen oletustoiminnon,
+luo uuden muistiinpanon selaimen muistiin,
+piirtää muistiinpanot sivulle uudelleen
+ja lähettää uuden muistiinpanon palvelimelle
+end note
+
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note over palvelin:
+palvelin tallentaa uuden muistiinpanon
+sovelluksen tietokantaan vastaa
+selaimelle, että muistiinpano on luotu
+end note
+
+palvelin-->selain: HTTP 201 : {"message":"note created"}
