@@ -18,6 +18,7 @@ const App = (props) => {
       setPoints(copy)
       setMostVoted(copy.indexOf(Math.max(...copy)))
   }
+  
 
   return (
     <div>
